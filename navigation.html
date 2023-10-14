@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="nav_styles.css">
+</head>
+
+<body>
+    <div class="navigation">
+    <div class="dropdown">
+        <button id="fruitsBtn">Physics</button>
+        <div class="dropdown-content" id="fruitsList">
+            <a href="#">Kinematics</a>
+            <a href="#">Laws of motion</a>
+            <a href="#">Thermodynamics</a>
+            <a href="#">Electrostatics</a>
+            <a href="#">Magnetism</a>
+            <a href="#">Optics</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button id="vegetablesBtn">Chemistry</button>
+        <div class="dropdown-content" id="vegetablesList">
+            <a href="#">Physical chemistry</a>
+            <a href="#">Inorganc chemistry</a>
+            <a href="#">Organic chemisty</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button id="drinksBtn">Math</button>
+        <div class="dropdown-content" id="drinksList">
+            <a href="#">Calculus</a>
+            <a href="#">Co-ordinate Geometry</a>
+            <a href="#">3D Geometry and Vectors</a>
+            <a href="#">Algebra</a>
+            <a href="#">Trigonometry</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button id="dessertsBtn">Biology</button>
+        <div class="dropdown-content" id="dessertsList">
+            <a href="#">Plant Physiology</a>
+            <a href="#">Human Physiology</a>
+            <a href="#">Genetics and Evolution</a>
+            <a href="#">Biotechnology and Its Applications</a>
+            <a href="#">Ecology and environment</a>
+        </div>
+    </div>
+    </div>
+    
+    <p id="selectedItem"></p>
+    
+    <script>
+        // JavaScript to handle the dropdown functionality
+        function initializeDropdown(buttonId, dropdownId) {
+            var button = document.getElementById(buttonId);
+            var dropdown = document.getElementById(dropdownId);
+
+            button.addEventListener("click", function() {
+                dropdown.classList.toggle("show");
+            });
+
+            dropdown.addEventListener("click", function(e) {
+                if (e.target.tagName === "A") {
+                    var selectedItem = e.target.innerHTML;
+                    document.getElementById("selectedItem").textContent = "Selected Item: " + selectedItem;
+                    dropdown.classList.remove("show");
+                }
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener("click", function(event) {
+                if (event.target !== button && event.target !== dropdown) {
+                    dropdown.classList.remove("show");
+                }
+            });
+        }
+
+        initializeDropdown("fruitsBtn", "fruitsList");
+        initializeDropdown("vegetablesBtn", "vegetablesList");
+        initializeDropdown("drinksBtn", "drinksList");
+        initializeDropdown("dessertsBtn", "dessertsList");
+    </script>
+</body>
+</html>
