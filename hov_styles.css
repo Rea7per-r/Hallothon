@@ -1,0 +1,22 @@
+
+            .container
+            {
+                padding: 10px;
+                margin: 100px auto;
+                display: flex;
+                background-color:cornflowerblue;
+                justify-content: center;
+            }
+            .box
+            {
+                border:1px solid black;
+                height: 250px;
+                width: 250px;
+                margin: 0px 10px;
+                background-color: orange;
+                transition: 1s;
+            }
+            .box:hover
+            {
+                transform:scale(1.2);
+            }
