@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Tutor Details</title> <!-- Add the title here -->
+    <style>
+        h1{align-items: center  q;}
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        #header img {
+            width: 100px;
+        }
+
+        #tutor-info {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #tutor-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        #tutor-image img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        #tutor-bio {
+            flex: 1;
+            padding: 200px;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        #content {
+            background-color: #AAC4FF;
+            text-align: center;
+            box-shadow: 0 0 20px;
+            margin-left: 170px;
+            margin-right: 170px;
+            margin-top: 20px;
+            border-radius: 20px;
+            margin-bottom: 100px;
+        }
+
+        #meet-button {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /* Style the "Home" and "Support" buttons */
+        .homebutton, .support-button {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .homebutton:hover, .support-button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .s {
+            font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;            font-weight: bold;
+            text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <svg id="logo" width="50" height="50">
+            <line x1="2" y1="3" x2="39" y2="3" style="stroke:rgb(228, 227, 235);stroke-width: 5;"></line>
+            <line x1="20" y1="3" x2="20" y2="29" style="stroke: rgb(231, 230, 236);stroke-width: 5;"></line>
+            <line x1="31" y1="9" x2="31" y2="37" style="stroke: rgb(7, 1, 31);stroke-width: 5;"></line>
+            <line x1="29" y1="36" x2="45" y2="36" style="stroke: rgb(7, 1, 31);stroke-width: 5;"></line>
+        </svg>
+        <h1>Tutor Details</h1>
+        <div id="header-buttons">
+            <!-- "Home" button -->
+            <a href="home.html" class="homebutton">Home</a>
+
+            <!-- "Support" button aligned with "Home" button -->
+            <a href="support.html" class="support-button">Support</a>
+        </div>
+    </div>
+
+    <div id="content">
+        
+        <div id="tutor-info">
+            <div id="tutor-image">
+                <img src="tejas-picture.jpg" alt="Tutor">
+            </div>
+            <div id="tutor-bio">
+                <p><span class="s">EMAIL:</span> tejaspai0507@gmail.com</p>
+                <p><span class="s">Ph No:</span> +91 9198514348</p>
+                <p><span class="s">DESCRIPTION:</span> Experienced tutor with a youthful twist, making learning a thrilling adventure. 🚀 Passionate about Physics, I'm here to turn 'I don't get it' into 'I've got it!' Let's explore the world of knowledge together.</p>
+            </div>
+        </div>
+
+        <button id="meet-button">Join Google Meet</button>
+    </div>
+</body>
+<footer id="support">
+    <div class="copyrights">
+        <div><span>&#169;</span> All Rights Reserved</div>
+        <div>Team Amnesia</div>
+        <div>contact<br>Tejas : +91 90199 42460</div>
+    </div>
+    <style>
+        .copyrights{
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            gap:300px;
+            background-color: aliceblue;
+            color:black;
+            height:80px;
+            align-items: center;
+        }
+
+    </style>
+</footer>
+</html>
